@@ -11,6 +11,6 @@ bash-api:
 	docker exec -it go_vue_typescript_api sh
 
 bash-app:
-	docker exec -it nuxt_firebase_app sh
-bash-mysql:
-	docker exec -it go_vue_typescript_api sh
+	docker exec -it nuxt_firebase_app_board sh
+bash-firebase:
+	docker exec -it nuxt_firebase_app_board_firebase sh
