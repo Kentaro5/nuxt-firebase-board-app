@@ -1,7 +1,7 @@
 version: '3'
 services:
   nuxt-app:
-    container_name: nuxt_firebase_app
+    container_name: nuxt_firebase_app_board
     build:
       context: ./app
       args:
@@ -12,5 +12,13 @@ services:
       - ${APP_CODE_LOCAL_PATH}:${APP_CODE_WORKDIR}
     ports:
       - ${APP_PORT}:${APP_PORT}
+      - '4000:4000' # Emulator Suite UI
+      - '5000:5000' # Firebase Hosting
+      - '5001:5001' # Clound Functions
+      - '9000:9000' # Realtime Database
+      - '8080:8080' # Cloud Firestore
+      - '8085:8085' # Cloud Pub/Sub
+      - '9099:9099' # Cloud Pub/Sub
+      - '9199:9199' # Cloud Pub/Sub
       - '24678:24678'
     tty: true

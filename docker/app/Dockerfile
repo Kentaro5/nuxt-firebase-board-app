@@ -5,8 +5,11 @@ ARG APP_PORT=${APP_PORT}
 FROM node:${NODE_VERSION}-alpine
 
 RUN apk update && \
-    apk add git
+    apk add git openjdk11-jre-headless bash
 
-WORKDIR ${APP_CODE_WORKDIR}
+RUN npm install -g firebase-tools
 
-EXPOSE ${APP_PORT}
+WORKDIR /src
+
+EXPOSE 3000 4000 5000 5001 9000 8080 8085 9099
+
