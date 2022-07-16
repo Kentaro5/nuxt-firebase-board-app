@@ -1,6 +1,11 @@
 {
   "name": "nuxt-firebase-board-app",
   "license": "UNLICENSED",
+  "scripts": {
+    "dev": "npm run dev --workspace=packages/board",
+    "generate": "npm run generate --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present"
+  },
   "private": true,
   "workspaces": [
     "packages/board"
