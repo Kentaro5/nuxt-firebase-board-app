@@ -1,0 +1,20 @@
+{
+  "name": "nuxt-firebase-board-app",
+  "license": "UNLICENSED",
+  "scripts": {
+    "dev": "npm run dev --workspace=packages/board",
+    "generate": "npm run generate --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present"
+  },
+  "private": true,
+  "workspaces": [
+    "packages/board"
+  ],
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.30.6",
+    "@typescript-eslint/parser": "^5.30.6",
+    "eslint": "^8.19.0",
+    "eslint-plugin-vue": "^9.2.0",
+    "prettier": "2.7.1"
+  }
+}
