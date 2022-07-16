@@ -1,0 +1,8 @@
+{
+  "name": "nuxt-firebase-board-app",
+  "license": "UNLICENSED",
+  "private": true,
+  "workspaces": [
+    "packages/board"
+  ]
+}
