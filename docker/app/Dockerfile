@@ -8,6 +8,8 @@ FROM node:${NODE_VERSION}-alpine
 #    apk add git openjdk11-jre-headless bash
 #
 #RUN npm install -g firebase-tools
+RUN apk update && \
+    apk add git openjdk11-jre-headless bash curl
 
 WORKDIR /src
 

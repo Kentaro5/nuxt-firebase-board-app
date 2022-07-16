@@ -1,19 +1,12 @@
 {
-  "name": "board",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Kentaro5/nuxt-firebase-board-app.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Kentaro5/nuxt-firebase-board-app/issues"
-  },
-  "homepage": "https://github.com/Kentaro5/nuxt-firebase-board-app#readme"
+  "devDependencies": {
+    "nuxt": "3.0.0-rc.5"
+  }
 }
