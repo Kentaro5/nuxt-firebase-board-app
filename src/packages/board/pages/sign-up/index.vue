@@ -19,17 +19,23 @@ const {twitterSignUp} = useTwitterSignUp(
 </script>
 <template>
   <div>
-    <div class="flex place-content-center items-center">
-      <div class="shadow-md max-360-none space-y-2 p-4">
+    <div class="flex place-content-center items-center h-screen">
+      <div class="sign-up-form shadow-md max-360-none space-y-4 p-4 sign-up-form">
         <p class="text-center">新規登録フォーム</p>
-        <form @submit.prevent="sendSignInLink">
+        <form @submit.prevent="sendSignInLink" class="space-y-4">
           <EmailInput v-model="email" />
-          <button class="bg-green-400 block text-white rounded-sm px-4 py-2" type="submit">登録</button>
+          <button class="bg-indigo-400 w-full block text-white rounded-sm px-4 py-2" type="submit">登録</button>
         </form>
         <form @submit.prevent="twitterSignUp">
-          <button class="bg-blue-400 block text-white rounded-sm px-4 py-2" type="submit">Twitterログインポップアップ</button>
+          <button class="bg-blue-400 w-full block text-white rounded-sm px-4 py-2" type="submit">Twitterログインポップアップ</button>
         </form>
       </div>
     </div>
   </div>
 </template>
+<style lang="css" scoped>
+.sign-up-form {
+  width: 428px
+}
+</style>
+
