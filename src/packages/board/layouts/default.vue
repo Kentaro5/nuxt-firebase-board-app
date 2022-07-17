@@ -19,6 +19,6 @@
   <main class="mx-auto bg-slate-50 p-4">
     <slot />
   </main>
-  <footer class="mx-auto bg-gray-50 py-5 text-center">
+  <footer class="mx-auto py-5 text-center">
   </footer>
 </template>
