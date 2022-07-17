@@ -1,7 +1,7 @@
 <template>
   <header class="mx-auto border-b border-gray-100 py-2 container grid grid-cols-4 gap-4">
     <div class="col-start-1 col-end-3 flex justify-start items-center space-x-4">
-      <img class="w-16" src="/assets/images/logo.png" alt="Board">
+      <img class="w-16" src="/images/logo.png" alt="Board">
       <div class="crayons-field flex-1 relative">
         <input class="rounded-md border border-gray-500\/50 w-full p-2" type="text" id="" name="q" placeholder="Search..." autocomplete="off" aria-label="Search term">
         <button type="submit" aria-label="Search" class="absolute inset-px left-auto mt-0 p-2">
