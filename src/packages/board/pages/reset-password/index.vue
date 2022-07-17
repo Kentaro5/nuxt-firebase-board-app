@@ -15,7 +15,7 @@ const { email, sendResetPasswordLink } = useResetPasswordLink(
       <form class="shadow-md max-360-none space-y-4 p-4" @submit.prevent="sendResetPasswordLink">
         <p class="text-center">パスワード変更フォーム</p>
         <EmailInput v-model="email"/>
-        <button class="bg-indigo-400 w-full block text-white rounded-sm px-4 py-2" type="submit">パスワードを変更する</button>
+        <button class="bg-gray-800 w-full block text-white rounded-sm px-4 py-2" type="submit">パスワードを変更する</button>
       </form>
     </div>
   </div>
