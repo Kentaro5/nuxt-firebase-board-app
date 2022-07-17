@@ -3,6 +3,10 @@ import {useSendSignLink, useSignIn} from "~/composables/auth"
 import EmailInput from "~/components/formInputs/EmailInput.vue";
 import PasswordInput from "~/components/formInputs/PasswordInput.vue";
 
+definePageMeta({
+  layout: false,
+});
+
 const {email, password, signIn, twitterSignIn} = useSignIn(
     async (user) => {
       navigateTo('/')

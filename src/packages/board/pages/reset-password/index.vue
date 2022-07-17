@@ -2,7 +2,9 @@
 import {useResetPasswordLink} from "~/composables/auth";
 import EmailInput from '~/components/formInputs/EmailInput.vue'
 import {navigateTo} from "#app";
-
+definePageMeta({
+  layout: false,
+});
 const { email, sendResetPasswordLink } = useResetPasswordLink(
     () => {
       navigateTo()
