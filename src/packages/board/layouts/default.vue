@@ -11,7 +11,8 @@
         </button>
       </div>
     </div>
-    <div class="col-end-7 col-span-2 flex justify-start items-center">
+    <div class="col-end-7 col-span-2 flex justify-start items-center space-x-4">
+      <NuxtLink to="/sign-out" class="rounded-md border text-gray-400 border-gray-400 block px-4 py-2">ログアウト</NuxtLink>
       <NuxtLink to="/my-page" class="rounded-md border text-indigo-400 border-indigo-400 block px-4 py-2">アカウント</NuxtLink>
     </div>
   </header>
