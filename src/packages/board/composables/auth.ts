@@ -134,9 +134,26 @@ export const useSignIn = (onSuccess: (user: User) => void = defaultSuccessCallba
         }
     }
 
+    const twitterSignIn = async () => {
+        const provider = new TwitterAuthProvider()
+        const auth = getAuth()
+        try {
+            const result = await signInWithPopup(auth, provider)
+            //const credential = TwitterAuthProvider.credentialFromResult(result);
+            const user = result.user;
+            onSuccess(user)
+            // The signed-in user info.
+        } catch (e) {
+            onError({
+                ...(e as Error)
+            })
+        }
+    }
+
     return {
         ...toRefs(formInputs),
         signIn,
+        twitterSignIn,
     }
 }
 
