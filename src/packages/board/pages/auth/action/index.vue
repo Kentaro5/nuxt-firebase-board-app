@@ -2,6 +2,11 @@
 import SignInWithEmailLink from '~/components/auth/SignInWithEmailLink.vue'
 import ResetPassword from '~/components/auth/ResetPassword.vue'
 import {useRoute} from "vue-router";
+
+definePageMeta({
+  layout: false,
+});
+
 const route = useRoute()
 
 const mode = route.query?.mode

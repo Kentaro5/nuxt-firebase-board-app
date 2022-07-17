@@ -3,6 +3,10 @@ import {useSendSignLink, useTwitterSignUp} from '~/composables/auth'
 import EmailInput from '~/components/formInputs/EmailInput.vue'
 import {FirebaseAuthSignInWithPopupErrors} from "~/composables/enums/firebase";
 
+definePageMeta({
+  layout: false,
+});
+
 const { email, sendSignInLink } = useSendSignLink()
 const {twitterSignUp} = useTwitterSignUp(
     () => {
