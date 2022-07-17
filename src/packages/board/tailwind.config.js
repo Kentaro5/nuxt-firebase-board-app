@@ -8,7 +8,13 @@ module.exports = {
     './plugins/**/*.{js,ts}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      gridTemplateColumns: {
+        // Complex site-specific column configuration
+        'content-lists': '40px 1fr',
+        'content-list-under': '100px 120px 1fr',
+      }
+    },
   },
   variants: {
     extend: {},
